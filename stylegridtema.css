@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  display: grid;
+  grid-template-areas: "header  header header" "main main main" "footer footer footer";
+}
+
+header {
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  grid-area: header;
+  background-color: rgb(24, 31, 76);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+img {
+  padding-left: 95px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style-type: none;
+  padding-top: 10px;
+  padding-right: 100px;
+}
+header li:hover {
+  background-color: white;
+  color: rgb(24, 31, 76);
+  font-size: 19px;
+  font-weight: 600;
+}
+main {
+  height: 600px;
+  grid-area: main;
+  padding-left: 100px;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+.cursuri {
+  padding-top: 20px;
+  display: grid;
+  grid-template-rows: 30px 30px;
+  grid-template-columns: 450px 450px;
+  gap: 10px;
+}
+.line {
+  border-bottom: 3px solid chocolate;
+}
+
+footer {
+  padding-left: 100px;
+  padding-top: 20px;
+  grid-area: footer;
+  background-color: rgb(24, 31, 76);
+  color: white;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-column-gap: 750px;
+}
+.contact,
+.locatii {
+  font-weight: 600;
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+footer li {
+  list-style-type: none;
+  line-height: 2;
+}
